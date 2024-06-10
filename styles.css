@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-font: "Roboto Condensed", sans-serif;    
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 10px;
+    background-color: #949494;
+}
+
+.main-block {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 56px;
+    gap: 56px;
+    border-radius: 40px;
+    overflow: hidden;
+
+}
+
+    .main-block__header {
+        font-family: var(--main-font);
+        font-weight: 700;
+        font-size: 72px;
+        color: #13010A;
+        line-height: 72px;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: -4%;
+    }
+
+        .main-block__header > svg {
+            width: 538px;
+        }
+
+    .main-block__button > a {
+        text-decoration: none;
+    }
+
+    .main-block__button > a > button {
+        background-color: #E03A7B;
+        color: #fff;
+        font-family: var(--main-font);
+        padding: 20px 8px 20px 24px;
+        border: none;
+        border-radius: 90px;
+        width: 266px;
+        height: 72px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 8px 8px 24px;
+    }
+
+        .main-block__button > a > button > svg {
+            width: 56px;
+            height: 56px;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+
+        .main-block__button > a > button:hover{
+            opacity: .5;
+        }
+
+    .main-block__image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 570px;
+        height: 397px;
+    }
+
+@media screen and (min-width: 320px) and (max-width: 920px) {
+
+    .main-block {
+        width: 100%;
+        padding: 16px;
+        gap: 24px;
+    }
+
+    .main-block__header {
+        font-family: var(--main-font);
+        font-weight: 500;
+        font-size: 32px;
+        color: #13010A;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: -2%;
+    }
+
+        .main-block__header > svg {
+            width: 100%;
+            height: auto;
+        }
+
+    .main-block__button > a > button {
+        width: 100%;
+    }
+
+    .main-block__image {
+        display: none;
+    }
+
+}
